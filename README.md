@@ -1,12 +1,16 @@
 # Documentation
+PiRacer Login (Username: pushforce, Password: pushforce)
 
-## Notes
-- Implement controls.
-- Switch from Python to CPP for control
+## Notes & ToDos
 - For the evaluation we need "How to assemble and setup PiRacer"
-- PiRacer Login (Username: pushforce, Password: pushforce)
+- CONTROLS: Implement controls --> Test controls with test script rc_example.py
+- Switch from Python to CPP for controls?
+- CAMERA: Settings of RaspberryPi (Interface Options > Camera enable) --> Test camera with test script camera_grab_example.py
 - More documentation on Assembly?
-- Settings of RaspberryPi (Interface Options > Camera enable) 
+- More examples available --> https://github.com/SEA-ME-COSS/DES-PiRacer-Assembly/tree/main/examples
+- Can we switch here from Python to CPP or is it easier to use Python for now?
+- PiRacer Libraries (vehicles, gamepad, camera) --> I think we need to understand that better for the future
+- OpenCV Library (cv2) --> I think we need to understand that better for the future
 
 ## Assembly Manual
 Parts: Motor, Wheels, Servo, Servo Pull Bar, PiRacer Expansion Board, Camera
@@ -17,7 +21,7 @@ Connections:
 ![PiRacer](https://github.com/user-attachments/assets/490b7d3b-79d7-492b-992d-83b935f73ce0)
 This is from tutorial, maybe we can do it nicer!
 
-## Pins on RaspberryPi (Connect WaveShare Extension with Pi)
+## Pins on RaspberryPi (Connect WaveShare Extension with RaspberryPi)
 https://www.heise.de/ratgeber/Raspberry-GPIO-Pins-beim-Booten-initialisieren-4782030.html
 ![image](https://github.com/user-attachments/assets/d3c51b6d-1626-4ef8-b6f1-5a068d44ca26)
 
@@ -58,16 +62,14 @@ source venv/bin/activate
 pip install piracer-py
 ```
 
-Then: Copy example from that tutorial and change PiRacerPro to PiRacerStandard
-
-
 ## Controls:
 Notes: What did we install? Which configurations an settings did we change?
 
 ## DockeyCar for autonomous driving when someone is bored :)
+- https://github.com/autorope/donkeycar
 
 ## Resources
 - Assembly Manual (https://www.waveshare.com/wiki/PiRacer_Assembly_Manual)
-- https://github.com/twyleg/piracer_py
-- https://github.com/Lagavulin9/piracer-cpp
-- https://github.com/SEA-ME-COSS/DES-PiRacer-Assembly
+- PiRacer Py (https://github.com/twyleg/piracer_py)
+- PiRacer C++ (https://github.com/Lagavulin9/piracer-cpp)
+- Assembly Manual COSS (https://github.com/SEA-ME-COSS/DES-PiRacer-Assembly)
